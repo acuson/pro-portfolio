@@ -1,8 +1,13 @@
 * {
+    box-sizing: border-box;
+}
+
+body{
     background-color: #0F4C5C ;
     color: #FFFFFF;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 /* Color Pallet:
     #5F0F40 = Tyrian Purple
@@ -11,3 +16,42 @@
     #E36414 = Spanish Orange
     #0F4C5C = Midnight Green Eagle Green
 */
+
+header {
+    text-align: left;
+    padding: 20px;
+    background-color: #FB8B24;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: #FB8B24;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a {
+    padding: 15px;
+}
+
+h2 {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+.headshot {
+    display: flex;
+    float:left;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+
+}
+
+.about-text {
+    display: flex;
+    justify-content: right;
+}
