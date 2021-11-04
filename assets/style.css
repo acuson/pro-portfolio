@@ -49,24 +49,49 @@ h2 {
     width: 250px;
     padding: 20px;
 
+
+}
+
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: blue;
+
+
 }
 
 .about-text {
     display: flex;
-    justify-content: right;
+    justify-content:space-between;
+    max-width: 60%;
 }
 
-.container {
+.container-2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: wrap;
+    border-style: solid;
+    border-color: blue;
+
 }
 
 .image {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
+    align-content: center;
     height: 200px;
     width: 500px;
+    border-style: solid;
+    border-color: yellow;
+}
+
+div {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    flex: 1;
+    width: 50%;
+    
+    
+    
 }
