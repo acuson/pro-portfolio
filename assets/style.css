@@ -64,13 +64,15 @@ h2 {
 
 .about-text {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     max-width: 60%;
 }
 
 .container-2 {
     display: flex;
-    height: 800px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1600px;
     border-style: solid;
     border-color: blue;
 
@@ -92,9 +94,18 @@ div {
     height: 400px;
     margin: 5px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-direction: row;
         
-    
-    
 }
+
+@media (max-width: 600px){
+  .container-1 {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 600px){
+    .container-2, div {
+        flex-direction: row;
+    }
+  }
