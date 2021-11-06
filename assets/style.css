@@ -39,6 +39,14 @@ footer a {
     padding: 15px;
 }
 
+aside {
+    height: 1054px;
+    display:flex;
+    float: left;
+    flex-direction: column;
+    background-color: #9A031E;
+}
+
 h2 {
     display: flex;
     justify-content: start;
