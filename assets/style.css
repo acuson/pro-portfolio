@@ -6,6 +6,7 @@ body{
     background-color: #FFFFFF  ;
     color: #0F4C5C;
     font-family: 'Ubuntu', sans-serif;
+    height: 100%;
 }
 
 
@@ -71,21 +72,22 @@ h2 {
 }
 
 .container-2 {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    height: 1600px;
+    /* justify-content: flex-start; */
+    height: 800px;
     border-style: solid;
     border-color: blue;
     background-color: #9A031E;
+    align-items: stretch
 }
 
 .image {
     display: flex;
     align-content: flex-start;
     height: 200px;
-    width: 300px;
+    width: 400px;
     border-style: solid;
     border-color: yellow;
 }
@@ -114,9 +116,9 @@ div {
 }
 
 .child-1 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 800px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 1000px;
     height: 200px;
     
 }
@@ -126,11 +128,11 @@ div {
 .child-4,
 .child-5 {
     height:200px;
-    display: inline-flex;
+    /* display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     flex-direction: column;
-}
+} */
 
 @media (max-width: 600px){
   .container-1,
@@ -138,5 +140,5 @@ div {
   div {
       display: inline-flexbox;
       flex-direction: column;
-  }
+}}
 }
