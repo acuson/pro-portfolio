@@ -1,23 +1,17 @@
+/*Universal Selector*/
 * {
     box-sizing: border-box;
 }
 
+/*Styling body*/
 body{
     background-color: #1e847f  ;
-    color: #000000;
+    color: #5F0F40;
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
 }
 
-
-/* Color Pallet:
-    #5F0F40 = Tyrian Purple
-    #9A031E = Ruby Red
-    #FB8B24 = Dark Orange
-    #E36414 = Spanish Orange
-    #0F4C5C = Midnight Green Eagle Green
-*/
-
+/*Header and footer will use the same styling characteristics*/
 header, footer {
     text-align: left;
     padding: 20px;
@@ -25,6 +19,7 @@ header, footer {
     color: #5F0F40;
 }
 
+/*Styling navigator*/
 nav {
     display: flex;
     justify-content: end;
@@ -34,6 +29,7 @@ nav {
     text-align: center;
 }
 
+/*URL links in navigator and footer*/
 nav a,
 footer a {
     padding: 15px;
@@ -43,6 +39,8 @@ footer a {
     display: flex;
     float: right;
 }
+
+/*Styling for aside - used as About Me and Work Section*/
 aside {
     height: 1050px;
     display:flex;
@@ -51,12 +49,14 @@ aside {
     background-color: #ecc19c;
 }
 
+/*Styling all h2 headings*/
 h2 {
     display: flex;
     justify-content: start;
     padding: 20px;
 }
 
+/*Anchor styling*/
 #anchor-about {
     padding-bottom: 150px;
     color: #1e847f;
@@ -65,6 +65,8 @@ h2 {
 #anchor-work {
     color: #1e847f;
 }
+
+/*Image styling for headshot*/
 .headshot {
     display: flex;
     float:left;
@@ -73,68 +75,59 @@ h2 {
     padding: 20px;
 }
 
-
+/*.container-1 is About Me section*/
 .container-1 {
     display: flex;
     flex-wrap: wrap;
-    /* border-style: solid;
-    border-color: blue; */
     background-color: #ecc19c;
 }
 
 .about-text {
     display: flex;
     justify-content:flex-end;
-    max-width: 60%;
+    max-width: 50%;
 }
 
+/*.container-2 is Work section*/
 .container-2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* justify-content: flex-start; */
     height: 800px;
-    /* border-style: solid;
-    border-color: blue; */
     background-color: #ecc19c;
     align-items: stretch
 }
 
+/*Styling for all images in Work*/
 .image {
     display: flex;
     align-content: flex-start;
     height: 200px;
     width: 400px;
-    /* border-style: solid;
-    border-color: yellow; */
 }
 
+/*Styling for first image in work*/
 .child-1 .image {
     display: flex;
     align-content: center;
     height: 200px;
     width: 800px;
-    /* border-style: solid;
-    border-color: yellow; */
 }
 
+/*Styling for second image in work* */
 .child-2 .image {
     display: flex;
     align-content: center;
 }
 
+/*For Work section*/
 div {
     width: 400px;
     height: 400px;
     margin: 5px;
-    /* display: flex;
-    flex-direction: row; */
-        
 }
 
 .child-1 {
-    /* display: flex;
-    flex-wrap: wrap; */
     width: 1000px;
     height: 200px;
     
@@ -145,28 +138,13 @@ div {
 .child-4,
 .child-5 {
     height:200px;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-direction: column;
-} */
+}
 
-/* @media (max-width: 600px){
-  .container-1,
-  .container-2,
-  div {
-      display: inline-flexbox;
-      flex-direction: column;
-}}
-} */
-
-
-
+/*Media query for responsiveness*/
 @media (max-width: 600px) {
     .container-1,
-    .container-2,
-    div {
+    .container-2 {
         display: flex;
-        flex: 0 1 auto;
-        flex-direction: column;}
-    }}
+        flex-direction: column;
+        flex-shrink: inherit;}
+    }
